@@ -12,6 +12,6 @@ class evento(models.Model):
     organizador = fields.Char("Organizator Name :", required=True)
     date = fields.Date("Event Date : ", required=True)
     description = fields.Text("Informacion of the Event :", required=True)
-    image = fields.Binary("Up imagens : ", required=True)
+    image = fields.Binary("Up imagens : ")
     estado = fields.Selection([('sonnn', 'Soonn'),('available', 'Available'),('finish', 'Finish'),('cancelled', 'Cancelled'),], default="soon")
 
