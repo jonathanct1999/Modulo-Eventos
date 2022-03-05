@@ -1,0 +1,134 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* evento
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 13.0-20211119\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-03-04 19:07+0000\n"
+"PO-Revision-Date: 2022-03-04 20:18+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+"X-Generator: Poedit 3.0.1\n"
+
+#. module: evento
+#: model:ir.model.fields.selection,name:evento.selection__evento_evento__estado__available
+msgid "Available"
+msgstr "Disponible"
+
+#. module: evento
+#: model:ir.model.fields.selection,name:evento.selection__evento_evento__estado__cancelled
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#. module: evento
+#: model:ir.model.fields,field_description:evento.field_evento_evento__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: evento
+#: model:ir.model.fields,field_description:evento.field_evento_evento__create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: evento
+#: model:ir.model.fields,field_description:evento.field_evento_evento__display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: evento
+#: model:ir.model.fields,field_description:evento.field_evento_evento__estado
+msgid "Estado"
+msgstr "Estado"
+
+#. module: evento
+#: model:ir.model.fields,field_description:evento.field_evento_evento__date
+msgid "Event Date : "
+msgstr "Fecha de Evento :"
+
+#. module: evento
+#: model:ir.model.fields,field_description:evento.field_evento_evento__name
+msgid "Event Name :"
+msgstr "Nombre Evento :"
+
+#. module: evento
+#: model:ir.actions.act_window,name:evento.action_window
+#: model:ir.actions.act_window,name:evento.library_book_calendar_action
+msgid "Events"
+msgstr "Eventos"
+
+#. module: evento
+#: model:ir.model.fields.selection,name:evento.selection__evento_evento__estado__finish
+msgid "Finish"
+msgstr "Acabados"
+
+#. module: evento
+#: model:ir.model.fields,field_description:evento.field_evento_evento__id
+msgid "ID"
+msgstr "ID"
+
+#. module: evento
+#: model:ir.model.fields,field_description:evento.field_evento_evento__description
+msgid "Informacion of the Event :"
+msgstr "Información del Evento :"
+
+#. module: evento
+#: model:ir.model.fields,field_description:evento.field_evento_evento____last_update
+msgid "Last Modified on"
+msgstr "Ultima vez Modificado"
+
+#. module: evento
+#: model:ir.model.fields,field_description:evento.field_evento_evento__write_uid
+msgid "Last Updated by"
+msgstr "Ultima vez Actualizado por"
+
+#. module: evento
+#: model:ir.model.fields,field_description:evento.field_evento_evento__write_date
+msgid "Last Updated on"
+msgstr "Ultima vez Actualizado el"
+
+#. module: evento
+#: model:ir.ui.menu,name:evento.menu_1_list
+msgid "List"
+msgstr "Lista"
+
+#. module: evento
+#: model:ir.ui.menu,name:evento.menu_1
+msgid "Menu"
+msgstr "Menu"
+
+#. module: evento
+#: model:ir.model.fields,field_description:evento.field_evento_evento__organizador
+msgid "Organizator Name :"
+msgstr "Nombre organizador :"
+
+#. module: evento
+#: model_terms:ir.ui.view,arch_db:evento.library_book_view_calendar
+msgid "Release Calendar"
+msgstr "Calendario de Lanzamiento"
+
+#. module: evento
+#: model:ir.model.fields.selection,name:evento.selection__evento_evento__estado__sonnn
+msgid "Soonn"
+msgstr "Proximamente"
+
+#. module: evento
+#: model:ir.model.fields,field_description:evento.field_evento_evento__image
+msgid "Up imagens : "
+msgstr "Subida de Imágenes :"
+
+#. module: evento
+#: model:ir.ui.menu,name:evento.menu_root
+msgid "evento"
+msgstr "evento"
+
+#. module: evento
+#: model:ir.model,name:evento.model_evento_evento
+msgid "evento.evento"
+msgstr "evento.evento"

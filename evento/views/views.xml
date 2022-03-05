@@ -1,0 +1,138 @@
+<odoo>
+  <data>
+
+
+    <record id='library_book_calendar_action' model='ir.actions.act_window'>
+        <field name="name">Events</field>
+        <field name="res_model">evento.evento</field>
+        <field name="view_mode">calendar</field>
+    </record>
+
+    <!-- explicit list view definition -->
+
+    <record model="ir.ui.view" id="evento.list">
+      <field name="name">event list</field>
+      <field name="model">evento.evento</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- Calendar View -->
+    <record id="library_book_view_calendar" model="ir.ui.view">
+        <field name="name">Events Calendar</field>
+        <field name="model">evento.evento</field>
+        <field name="arch" type="xml">
+            <calendar string="Release Calendar" date_start="date" mode="month">
+                <field name="name"/>
+            </calendar>
+        </field>
+    </record>
+
+
+    <!-- actions opening views on models -->
+
+    <record  id='evento.action_window' model="ir.actions.act_window">
+      <field name="name">Events</field>
+      <field name="res_model">evento.evento</field>
+      <field name="view_mode">tree,form,calendar,kanban</field>
+    </record>
+
+
+    <!-- Top menu item -->
+
+    <menuitem name="evento" id="evento.menu_root"/>
+
+    <!-- menu categories -->
+
+    <menuitem name="Menu" id="evento.menu_1" parent="evento.menu_root"/>
+  
+
+    <!-- actions -->
+
+    <menuitem name="List" id="evento.menu_1_list" parent="evento.menu_1"
+              action="evento.action_window"/>
+   
+
+<!--Vista Formulario-->
+<record id="evento_view_form" model="ir.ui.view">
+  <field name="name">Form Events</field>
+  <field name="model">evento.evento</field>
+  <field name="arch" type="xml">
+      <form>
+        <group>
+              <field name="name"/>
+              <field name="date" weigth="50" />
+              <field name="description"/>
+              <field name="organizador"/>
+              <field name="estado"/>
+        </group>
+        <group>
+              <field name="image" widget="image" height="100" weigth="100"/>
+        </group>
+      </form>
+    </field>
+</record>
+
+
+ <!-- Tree(list) View -->
+    <record id="library_book_view_tree" model="ir.ui.view">
+        <field name="name">Events List</field>
+        <field name="model">evento.evento</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="date"/>
+                <field name="organizador"/>
+            </tree>
+        </field>
+    </record>
+
+   <!-- Search View -->
+    <record id="library_book_view_search" model="ir.ui.view">
+        <field name="name">Events Search</field>
+        <field name="model">evento.evento</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="date"/>
+                <field name="organizador"/>
+            </search>
+        </field>
+    </record>
+
+     <!-- Kanban View -->
+    <record id="library_book_rent_view_kanban" model="ir.ui.view">
+        <field name="name">Event Kanban</field>
+        <field name="model">evento.evento</field>
+        <field name="arch" type="xml">
+            <kanban default_group_by="estado">   
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click">
+                            <div class="oe_kanban_content">
+                                <div class="oe_kanban_card">
+                                    <div>
+                                        <i class="fa fa-tag"/>
+                                        <b>
+                                          <field name="name" />
+                                        </b>
+                                    </div>
+                                    <div class="text-muted">
+                                        <i class="fa fa-book"/>
+                                        <field name="organizador"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>    
+
+
+  </data>
+</odoo>
